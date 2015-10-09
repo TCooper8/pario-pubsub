@@ -4,12 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublish": "npm test",
+    "prebuild": "npm test",
+    "pretest": "node_modules/.bin/babel src --out-dir lib",
+    "test": "mocha --compilers js:babel/register --recursive test"
   },
   "author": "Tyler Cooper",
   "license": "ISC",
   "dependencies": {
     "lodash": "^3.10.1",
     "pario-match": "git+https://github.com/TCooper8/pario-match.git"
+  },
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "mocha": "^2.3.3"
   }
 }
