@@ -1,0 +1,15 @@
+{
+  "name": "pario-pubsub",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tyler Cooper",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^3.10.1",
+    "pario-match": "git+https://github.com/TCooper8/pario-match.git"
+  }
+}
